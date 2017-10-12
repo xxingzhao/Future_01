@@ -22,6 +22,7 @@ public class RealData implements Data {
         return result;
     }
    
+   @Override
    public String toString() {
      return "result:" + result;
    }
