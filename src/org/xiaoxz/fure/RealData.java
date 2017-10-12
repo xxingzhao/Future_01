@@ -28,6 +28,10 @@ public class RealData implements Data {
      hello.split("");
      System.out.println(hello);
       System.out.println(hello);
+     String[] arr = hello.split("");
+     for (String s:arr) {
+         System.out.println(s);
+     }
      return "result:" + result;
    }
 }
