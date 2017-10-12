@@ -25,7 +25,7 @@ public class RealData implements Data {
    @Override
    public String toString() {
      String hello = "Hello World";
-     System.out.pritnln(hello);
+     hello.split("");
      return "result:" + result;
    }
 }
