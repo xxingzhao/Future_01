@@ -21,4 +21,8 @@ public class RealData implements Data {
     public String getResult() {
         return result;
     }
+   
+   public String toString() {
+     return "result:" + result;
+   }
 }
