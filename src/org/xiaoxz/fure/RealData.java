@@ -2,7 +2,8 @@ package org.xiaoxz.fure;
 
 public class RealData implements Data {
 
-   final String result;
+    final String result;
+
     public RealData(String param) {
         StringBuffer sb = new StringBuffer();
         for(int i=0; i<10; i++) {
@@ -24,14 +25,6 @@ public class RealData implements Data {
    
    @Override
    public String toString() {
-     String hello = "Hello World";
-     hello.split("");
-     System.out.println(hello);
-      System.out.println(hello);
-     String[] arr = hello.split("");
-     for (String s:arr) {
-         System.out.println(s);
-     }
      return "result:" + result;
    }
 }
