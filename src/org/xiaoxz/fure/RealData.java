@@ -26,6 +26,8 @@ public class RealData implements Data {
    public String toString() {
      String hello = "Hello World";
      hello.split("");
+     System.out.println(hello);
+      System.out.println(hello);
      return "result:" + result;
    }
 }
