@@ -18,9 +18,6 @@ public class BubbleSort {
         }
 
         for(int i=0; i<arr.length; i++) {
-            System.out.println();
-            System.out.println();
-            System.out.print("提交修改");
             System.out.print(arr[i] +"、");
         }
     }
