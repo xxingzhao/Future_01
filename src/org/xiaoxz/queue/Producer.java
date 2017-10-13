@@ -9,6 +9,7 @@ public class Producer implements Runnable{
 
     private BlockingQueue<PcData> queue;
     private static AtomicInteger count = new AtomicInteger(0);
+    private static int counts = 0;
     private volatile static boolean isRunning = true;
     private final static int SLEEPTiME = 1000;
 
@@ -25,7 +26,7 @@ public class Producer implements Runnable{
         try {
             while(isRunning) {
                 Thread.sleep(random.nextInt(SLEEPTiME));
-                pcData = new PcData(count.incrementAndGet());
+                pcData = new PcData(++counts);
                 if(!queue.offer(pcData, 20L, TimeUnit.SECONDS)) {
                     System.out.println("Fail to put PcData " + pcData);
                 }

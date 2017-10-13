@@ -18,11 +18,14 @@ public class Main {
         Consumer c2 = new Consumer(queue);
         Consumer c3 = new Consumer(queue);
 
-        ExecutorService service = Executors.newCachedThreadPool();
+        ExecutorService service = Executors.newFixedThreadPool(5);
 
         service.submit(p1);
         service.submit(p2);
         service.submit(p3);
+        service.submit(new Producer(queue));
+        service.submit(new Producer(queue));
+
 
         service.submit(c1);
         service.submit(c2);
