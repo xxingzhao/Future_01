@@ -1,6 +1,7 @@
 package org.xiaoxz.observer;
 
 /**
+ * 观察者模式
  * @author : xiaoxz
  * @Date: Created in 2017/11/10
  * @Modified by :
