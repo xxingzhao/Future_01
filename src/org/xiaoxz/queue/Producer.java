@@ -5,13 +5,14 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+
 public class Producer implements Runnable{
 
     private BlockingQueue<PcData> queue;
     private static AtomicInteger count = new AtomicInteger(0);
     private static int counts = 0;
-    private volatile static boolean isRunning = true;
-    private final static int SLEEPTiME = 1000;
+    private volatile static boolean IS_RUNNING = true;
+    private final static int SLEEP_TiME = 1000;
 
     public Producer(BlockingQueue queue) {
         this.queue = queue;
@@ -24,8 +25,8 @@ public class Producer implements Runnable{
         Random random = new Random();
         System.out.println("Start Produce Thread is " + Thread.currentThread().getId());
         try {
-            while(isRunning) {
-                Thread.sleep(random.nextInt(SLEEPTiME));
+            while(IS_RUNNING) {
+                Thread.sleep(random.nextInt(SLEEP_TiME));
                 pcData = new PcData(++counts);
                 if(!queue.offer(pcData, 20L, TimeUnit.SECONDS)) {
                     System.out.println("Fail to put PcData " + pcData);
@@ -37,7 +38,7 @@ public class Producer implements Runnable{
     }
 
     public void stop() {
-        this.isRunning = false;
+        IS_RUNNING = false;
     }
 
 }

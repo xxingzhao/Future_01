@@ -5,21 +5,21 @@ import org.jetbrains.annotations.Contract;
 public class ValidateUtils {
 
     //初始化数组变量
-    private final static char[] str = {'A','B','C','D','E','F','G','H',
+    private final static char[] STR = {'A','B','C','D','E','F','G','H',
             'I','J','K','L','M','N','O','P',
             'Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h',
             'i','j','k','l','m','n','o','p',
             'q','r','s','t','u','v','w','x','y','z'};
-    private final static char[] cNum = {'1','2','3','4','5','6','7','8','9','0'};
-    private final static String[] sMail = {"@", "."};
+    private final static char[] C_NUM = {'1','2','3','4','5','6','7','8','9','0'};
+    private final static String[] S_MAIL = {"@", "."};
 
     /**方法说明： 判断邮箱格式是否正确
      * @param sParam
      * @return 邮箱有效，返回true,否则返回false
      */
     public static boolean isEmail(String sParam) {
-        for(int i=0; i<sMail.length; i++) {
-            if(sParam.indexOf(sMail[i]) == -1) {
+        for(int i = 0; i< S_MAIL.length; i++) {
+            if(sParam.indexOf(S_MAIL[i]) == -1) {
                 return  false;
             }
         }
@@ -32,7 +32,7 @@ public class ValidateUtils {
      * @return
      */
     public static boolean isNumber(String sParam) {
-        return validate(cNum, sParam);
+        return validate(C_NUM, sParam);
     }
 
     /**
@@ -41,7 +41,7 @@ public class ValidateUtils {
      * @return
      */
     public static boolean isString(String sParam) {
-        return validate(str, sParam);
+        return validate(STR, sParam);
     }
 
 
