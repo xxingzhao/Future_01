@@ -1,13 +1,14 @@
 package org.xiaoxz.auto.dao.impl;
 
-import com.xiaoxz.auto.bean.ColumnStruct;
-import com.xiaoxz.auto.bean.TableStruct;
-import com.xiaoxz.auto.dao.GetTablesDao;
-import com.xiaoxz.auto.dao.ServiceImplAutoDao;
-import com.xiaoxz.auto.util.ConfigUtil;
-import com.xiaoxz.auto.util.DataTypeUtil;
-import com.xiaoxz.auto.util.FileUtil;
-import com.xiaoxz.auto.util.NameUtil;
+
+import org.xiaoxz.auto.bean.ColumnStruct;
+import org.xiaoxz.auto.bean.TableStruct;
+import org.xiaoxz.auto.dao.GetTablesDao;
+import org.xiaoxz.auto.dao.ServiceImplAutoDao;
+import org.xiaoxz.auto.util.ConfigUtil;
+import org.xiaoxz.auto.util.DataTypeUtil;
+import org.xiaoxz.auto.util.FileUtil;
+import org.xiaoxz.auto.util.NameUtil;
 
 import java.util.List;
 
