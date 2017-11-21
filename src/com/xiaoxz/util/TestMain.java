@@ -21,8 +21,9 @@ public class TestMain {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date nowDate   = new Date();
         Date ciEndDate = sdf.parse("2017-11-21");
-        long l = nowDate.getTime() - ciEndDate.getTime();
+        long l = ciEndDate.getTime() - nowDate.getTime() ;
         System.out.println(l);
+        System.out.println(sdf.format(nowDate));
     }
 
     public static void integerCompare() {
