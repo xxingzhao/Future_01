@@ -1,0 +1,28 @@
+# Java #
+*.class
+classes/
+target/
+
+# Eclipse #
+.classpath
+.project
+.settings
+.metadata
+bin/
+
+# idea #
+*.iml
+.idea/
+*.iws
+*.ipr
+.ideaDataSources/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.tmp
+*.bak
+*.swp
+
+onclick-admin/\.tern-project
