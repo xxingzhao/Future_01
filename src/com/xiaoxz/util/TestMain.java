@@ -23,6 +23,7 @@ public class TestMain {
         Date ciEndDate = sdf.parse("2017-11-21");
         long l = nowDate.getTime() - ciEndDate.getTime();
         System.out.println(sdf.format(nowDate));
+        System.out.println("fix Bug..........");
     }
 
     public static void integerCompare() {
