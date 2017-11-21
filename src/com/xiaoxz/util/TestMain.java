@@ -42,4 +42,8 @@ public class TestMain {
         int i2 = 1280;
         System.out.println(i1 == i2);
     }
+
+    public static void development() {
+        System.out.println("功能开发中................");
+    }
 }
