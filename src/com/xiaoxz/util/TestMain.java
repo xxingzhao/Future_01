@@ -24,6 +24,7 @@ public class TestMain {
         long l = nowDate.getTime() - ciEndDate.getTime();
         System.out.println(sdf.format(nowDate));
         System.out.println(l);
+        System.out.println(sdf.format(nowDate));
     }
 
     public static void integerCompare() {
