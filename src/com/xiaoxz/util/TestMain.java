@@ -14,6 +14,7 @@ public class TestMain {
         boolean bNum = ValidateUtils.isNumber(num);
         boolean bStr = ValidateUtils.isString(str);
         boolean bEmail = ValidateUtils.isEmail(email);
+        System.out.println("fix bug complete...........");
         compareDate();
     }
 
